@@ -37,3 +37,4 @@ abline(bAGE)
 summary.lm(bAGE)
 ```
 
+We want to compare the model with age to the other model with neck.
