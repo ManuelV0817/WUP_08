@@ -74,3 +74,4 @@ abline(bWEIGHT)
 summary.lm(bWEIGHT)
 ```
 
+After comparing all the models the new order would be, HEADLEN - 0.8463, CHEST- 0.7869, NECK - 0.7476, WEIGHT - 0.7423, HEADWTH- 0.5409, AGE - 0.5073.
