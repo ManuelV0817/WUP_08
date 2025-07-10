@@ -58,5 +58,10 @@ summary.lm(bHEADWTH)
 
 After comparing all the models the new order would be, HEADLEN - 0.8463, NECK - 0.7476, HEADWTH- 0.5409, AGE - 0.5073 
 
-
+```{r}
+bCHEST <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(bCHEST)
+summary.lm(bCHEST)
+```
 
