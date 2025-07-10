@@ -47,7 +47,7 @@ abline(bHEADLEN)
 summary.lm(bHEADLEN)
 ```
 
-After comparing the models, the order from largest to smallest is, HEADLEN - 0.8463, NECK - 0.7476 AGE - 0.5073 
+After comparing the models, the order from largest to smallest is, HEADLEN - 0.8463, NECK - 0.7476 AGE - 0.5073. 
 
 ```{r}
 bHEADWTH <- lm(LENGTH~HEADWTH,data=bears)
@@ -56,7 +56,7 @@ abline(bHEADWTH)
 summary.lm(bHEADWTH)
 ```
 
-After comparing all the models the new order would be, HEADLEN - 0.8463, NECK - 0.7476, HEADWTH- 0.5409, AGE - 0.5073 
+After comparing all the models the new order would be, HEADLEN - 0.8463, NECK - 0.7476, HEADWTH- 0.5409, AGE - 0.5073.
 
 ```{r}
 bCHEST <- lm(LENGTH~CHEST,data=bears)
@@ -65,4 +65,12 @@ abline(bCHEST)
 summary.lm(bCHEST)
 ```
 
-After comparing all the models the new order would be, HEADLEN - 0.8463, CHEST- 0.791, NECK - 0.7476, HEADWTH- 0.5409, AGE - 0.5073
+After comparing all the models the new order would be, HEADLEN - 0.8463, CHEST- 0.7869, NECK - 0.7476, HEADWTH- 0.5409, AGE - 0.5073.
+
+```{r}
+bWEIGHT <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(bWEIGHT)
+summary.lm(bWEIGHT)
+```
+
